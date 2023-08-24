@@ -1,1 +1,1 @@
-DevOps documentation, guides, diagram and useful links.
+DevOps documentation, guides, diagrams, and useful links.
