@@ -122,3 +122,12 @@ contexts:
 
 - [A Visual Guide to SSH Tunnels: Local and Remote Port Forwarding](https://iximiuz.com/en/posts/ssh-tunnels/)
                                                                    (https://blog.knoldus.com/how-to-access-the-private-cluster-using-bastion-server-on-azure-portal/)
+
+
+
+# Connect to azure services with az ssh Tunnel
+# login with azure account
+az login --tenant "ff9085aa-053a-4b01-8817-effac5fdfdce"
+
+# create ssh tunnel to the mysql server
+az ssh vm --ip sbahm-pta.uksouth.cloudapp.azure.com -- "-L 3306:internal-ptae-mysql.mysql.database.azure.com:3306" -v
